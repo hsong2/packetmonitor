@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 
     char track[] = "forensics";
     char name[] = "songyi Hwang";
-    printf("[bob5][%s]pcap_test[%s]", track, name);
+    printf("[bob5][%s]pcap_test[%s]\n", track, name);
 
     dev = pcap_lookupdev(errbuf);
     if(dev == NULL) {
