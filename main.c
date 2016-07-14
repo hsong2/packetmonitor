@@ -45,6 +45,10 @@ int main(int argc, char *argv[])
     bpf_u_int32 maskp;
     int ret;
 
+    char track[] = "forensics";
+    char name[] = "songyi Hwang";
+    printf("[bob5][%s]pcap_test[%s]", track, name);
+
     dev = pcap_lookupdev(errbuf);
     if(dev == NULL) {
         printf("%s\n", errbuf);
